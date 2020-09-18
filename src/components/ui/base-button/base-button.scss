@@ -1,5 +1,13 @@
+@import '../../../assets/styles/variables';
+
 .btn {
-  color: green;
+  color: $white;
+  padding: 5px 10px;
+  line-height: 30px; // TODO:
+
+  border: none;
+  border-radius: $radius-5;
+  background: linear-gradient($blue-400, $blue-500);
 
   &.btn--loading {
     color: red;

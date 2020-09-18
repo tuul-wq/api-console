@@ -1,0 +1,13 @@
+@import '../../../../assets/styles/variables';
+
+.login-form {
+  width: 520px;
+  padding: 40px 30px;
+  background: $white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: $radius-5;
+
+  & > .input-row {
+    margin-bottom: $margin-20;
+  }
+}

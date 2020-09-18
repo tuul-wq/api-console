@@ -5,10 +5,7 @@ import './app.scss';
 
 function App() {
   return (
-    <div>
-      app
-      <Routes />
-    </div>
+    <Routes />
   );
 }
 
