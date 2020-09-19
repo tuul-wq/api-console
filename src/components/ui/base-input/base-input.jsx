@@ -3,19 +3,19 @@ import PropTypes from 'prop-types';
 
 import './base-input.scss';
 
-// TODO: handle hasError
-// TODO: input-row__title--optional - add text with ::after
-function BaseInput({ title, value, type, isOptional, onChanged }) {
+function BaseInput({ title, value, type, hasError, isOptional, onChanged }) {
+  const rowClasses = `input-row ${hasError ? 'input-row--error' : ''}`;
   const titleClasses = `input-row__title ${isOptional ? 'input-row__title--optional' : ''}`;
   const inputType = type || 'text';
 
   const valueChanged = (event) => onChanged(event.target.value);
 
   return (
-    <label className="input-row">
+    <label className={rowClasses}>
       <span className={titleClasses}>{title}</span>
       <input
         className="input-row__input"
+        autoComplete="off"
         type={inputType}
         value={value}
         onChange={valueChanged}
@@ -28,6 +28,7 @@ BaseInput.propTypes = {
   title: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   type: PropTypes.oneOf(['text', 'password', 'number']),
+  hasError: PropTypes.bool,
   isOptional: PropTypes.bool,
   onChanged: PropTypes.func.isRequired
 };

@@ -1,0 +1,9 @@
+@import '../../assets/styles/variables';
+
+.console {
+  
+
+  & > *:not(:last-child) {
+    border-bottom: 1px solid rgba($black, 0.2);
+  }
+}

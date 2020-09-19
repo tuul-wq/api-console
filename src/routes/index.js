@@ -14,9 +14,10 @@ function Routes() {
         {/* <Route exact path={['/login', '/console']}>
           { isLoggedIn ? <Console /> : <Login /> }
         </Route> */}
-        <Route exact to="/login" component={Login} />
-        <Route exact to="/console" component={Console} />
-        <Redirect to="/login" />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/console" component={Console} />
+        {/* <Redirect to="/login" /> */}
+        <Redirect to="/console" />
       </Switch>
     </Router>
   );

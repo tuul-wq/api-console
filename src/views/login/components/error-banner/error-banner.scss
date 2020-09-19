@@ -1,0 +1,29 @@
+@import '../../../../assets/styles/variables';
+
+.error-banner {
+  padding: 10px;
+  background-color: rgba($red-500, 0.1);
+  border-radius: $radius-5;
+
+  .error-banner__title {
+    font-size: $font-size-18;
+    line-height: $line-height-30;
+    color: $red-500;
+
+    &::before {
+      content: url('../../../../assets/images/meh.svg');
+      display: inline-block;
+      vertical-align: text-bottom;
+      margin-right: 10px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .error-banner__response {
+    color: $red-500;
+    opacity: 0.5;
+    padding: 0 32px;
+    font-size: $font-size-12;
+  }
+}

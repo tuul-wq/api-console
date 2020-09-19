@@ -8,7 +8,7 @@ function BaseButton({ title, isLoading, onClicked }) {
 
   return (
     <button type="button" className={classes} onClick={onClicked}>
-      {title}
+      <span className="btn__title">{title}</span>
     </button>
   )
 }

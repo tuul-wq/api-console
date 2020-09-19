@@ -1,15 +1,40 @@
 @import '../../../assets/styles/variables';
 
 .btn {
-  color: $white;
+  cursor: pointer;
+  min-width: 110px;
   padding: 5px 10px;
-  line-height: 30px; // TODO:
-
   border: none;
   border-radius: $radius-5;
   background: linear-gradient($blue-400, $blue-500);
+  outline: none;
+  font-family: inherit;
+
+  &:focus:not(:active) {
+    box-shadow:  0 0 0px 2px rgba($blue-400, 0.5);
+    border-radius: 7px;
+  }
+
+  &:hover {
+    background: linear-gradient($blue-350, $blue-450);
+  }
+
+  &:active {
+    background: linear-gradient($blue-425, $blue-550);
+  }
+
+  &:disabled {
+    background: $gray-500;
+  }
 
   &.btn--loading {
     color: red;
+  }
+
+  .btn__title {
+    color: $white;
+    line-height: $line-height-30;
+    font-size: $font-size-16;
+    font-weight: 500;
   }
 }
