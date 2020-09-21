@@ -1,0 +1,16 @@
+@import '../../../../../assets/styles/variables';
+
+.history-list {
+  display: flex;
+  list-style: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 0;
+  margin: 0;
+
+  .history-list__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

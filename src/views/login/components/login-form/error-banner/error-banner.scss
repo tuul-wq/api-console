@@ -1,4 +1,4 @@
-@import '../../../../assets/styles/variables';
+@import '../../../../../assets/styles/variables';
 
 .error-banner {
   padding: 10px;
@@ -11,7 +11,7 @@
     color: $red-500;
 
     &::before {
-      content: url('../../../../assets/images/meh.svg');
+      content: url('../../../../../assets/images/meh.svg');
       display: inline-block;
       vertical-align: text-bottom;
       margin-right: 10px;

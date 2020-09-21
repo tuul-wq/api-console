@@ -8,7 +8,9 @@ function reducer(state = initialState, { type, payload }) {
 }
 
 const initialState = {
-  user: 1
+  user: {
+    a: 1
+  }
 };
 
 export default reducer;

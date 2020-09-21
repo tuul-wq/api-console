@@ -2,5 +2,26 @@
 @import '../../../../assets/styles/mixins';
 
 .history {
+  @include border-b;
+
+  display: flex;
+  justify-content: space-between;
   padding: 10px 15px;
+
+  .btn-icon {
+    position: relative;
+
+    &::before {
+      content: '';
+      pointer-events: none;
+      position: absolute;
+      // FIXME: button width
+      left: -35px;
+      bottom: 0;
+      top: 0;
+      width: 15px;
+      // background: linear-gradient(to right, rgba($white, 0), rgba($gray-400, 1) 90%);
+      background: linear-gradient(to right, rgba($white, 0), rgba(red, 1) 90%);
+    }
+  }
 }

@@ -5,9 +5,9 @@ import './actions.scss';
 
 function Actions() {
   return (
-    <div className="actions">
+    <footer className="actions">
       <BaseButton title="Отправить" />
-    </div>
+    </footer>
   )
 }
 

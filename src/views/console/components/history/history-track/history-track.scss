@@ -1,10 +1,12 @@
-@import '../../../assets/styles/variables';
+@import '../../../../../assets/styles/variables';
 
 .history-track {
+  cursor: default;
+  white-space: nowrap;
   background: $white;
   box-shadow: 0px 1px 2px rgba($black, 0.1);
   border-radius: $radius-5;
-  padding: 5px 10px;
+  padding: 5px 0 5px 10px ;
 
   .history-track__title {
     &::before {
@@ -28,6 +30,15 @@
   }
 
   .history-track__action {
-
+    cursor: pointer;
+    padding: 0 10px;
+    width: 4px;
+    height: 18px;
+    background-image: url('../../../../../assets/images/icons/dots.svg');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    border: none;
+    vertical-align: text-top;
   }
 }

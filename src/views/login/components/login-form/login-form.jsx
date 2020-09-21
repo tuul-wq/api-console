@@ -3,7 +3,7 @@ import React from 'react';
 import Heading from '../../../../components/ui/heading/heading';
 import BaseInput from '../../../../components/ui/base-input/base-input';
 import BaseButton from '../../../../components/ui/base-button/base-button';
-import ErrorBanner from '../error-banner/error-banner';
+import ErrorBanner from './error-banner/error-banner';
 import './login-form.scss';
 
 function LoginForm() {

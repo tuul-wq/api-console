@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ConsoleProvider } from '../../context/console-context';
+import { AuthProvider } from '../../context/auth-context';
 import ConsoleService from '../../services/console.service';
 import Actions from './components/actions/actions';
 import Header from './components/header/header';
@@ -12,14 +13,26 @@ const consoleService = new ConsoleService();
 
 function Console() {
   return (
-    <ConsoleProvider value={consoleService}>
+    <>
+      <Header />
       <main className="console">
-        <Header />
         <History />
         <Query />
-        <Actions />
       </main>
-    </ConsoleProvider>
+      <Actions />
+    </>
+    // <>
+    //   <AuthProvider value={consoleService}>
+    //     <Header />
+    //   </AuthProvider>
+    //   <ConsoleProvider value={consoleService}>
+    //     <main className="console">
+    //       <History />
+    //       <Query />
+    //     </main>
+    //   </ConsoleProvider>
+    //   <Actions />
+    // </>
   )
 }
 

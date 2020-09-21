@@ -1,0 +1,14 @@
+@import '../../../../../assets/styles/variables';
+
+.header-left {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    margin-right: 20px;
+  }
+
+  .heading {
+    font-size: $font-size-20;
+  }
+}

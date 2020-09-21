@@ -2,5 +2,7 @@
 @import '../../../../assets/styles/mixins';
 
 .query {
+  @include border-b;
+
   padding: 10px 15px;
 }

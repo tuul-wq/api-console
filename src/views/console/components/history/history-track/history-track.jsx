@@ -5,11 +5,14 @@ import './history-track.scss';
 
 function HistoryTrack({ title, success }) {
   const titleClasses = `history-track__title ${success ? 'success' : 'failure'}`
+  const showMoreActions = () => {
+
+  }
 
   return (
     <div className="history-track">
       <span className={titleClasses}>{title}</span>
-      <span className="history-track__action">btn</span>
+      <button className="history-track__action" type="button" onClick={showMoreActions} />
     </div>
   )
 }

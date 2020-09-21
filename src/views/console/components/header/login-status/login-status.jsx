@@ -1,6 +1,6 @@
 import React from 'react';
 
-import BaseIconButton from '../../../../components/ui/base-icon-button/base-icon-button';
+import BaseIconButton from '../../../../../components/ui/base-icon-button/base-icon-button';
 import './login-status.scss';
 
 function LoginStatus() {
