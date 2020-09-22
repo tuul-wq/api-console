@@ -36,7 +36,6 @@
     border-radius: $radius-5;
     outline: none;
 
-    // &:focus:not(:active) {
     &:focus {
       @include focus-shadow(rgba($black, 0.2));
       border-color: rgba($black, 0.4);

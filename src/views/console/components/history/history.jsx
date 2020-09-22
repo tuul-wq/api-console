@@ -8,7 +8,7 @@ function History() {
   return (
     <div className="history">
       <HistoryList />
-      <BaseIconButton img="cross" alt="Cross" onClicked={() => console.log('aaa')}/>
+      <BaseIconButton img="cross" onClicked={() => console.log('aaa')}/>
     </div>
   )
 }

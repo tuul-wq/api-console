@@ -1,0 +1,32 @@
+@import '../../../../../assets/styles/mixins';
+@import '../../../../../assets/styles/variables';
+
+.query-input {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  // width: 100%;
+
+  .query-input__title {
+    color: $gray-600;
+    font-size: $font-size-12;
+  }
+
+  .query-input__area {
+    height: 100%;
+    resize: none;
+
+    // TODO: duplicate use mixin with variables
+    padding: 10px;
+    font-size: $font-size-14;
+    font-family: 'Source Code Pro', monospace;
+    line-height: $line-height-18;
+    border: 1px solid $gray-450;
+    border-radius: $radius-5;
+    outline: none;
+
+    &:focus, &:hover {
+      border-color: rgba($black, 0.4);
+    }
+  }
+}

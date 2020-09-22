@@ -1,4 +1,4 @@
-// @import '../../../../assets/styles/variables';
+@import '../../../../assets/styles/variables';
 @import '../../../../assets/styles/mixins';
 
 .history {
@@ -6,11 +6,14 @@
 
   display: flex;
   justify-content: space-between;
-  padding: 10px 15px;
+
+  .history-list {
+    padding: 10px 0 10px 15px;
+  }
 
   .btn-icon {
     position: relative;
-    padding-left: 17px;
+    padding: 10px 15px;
 
     &::before {
       content: '';
@@ -21,6 +24,7 @@
       top: 0;
       width: 15px;
       background: linear-gradient(to right, rgba($white, 0), rgba($gray-400, 1) 90%);
+      border-right: 1px solid rgba($black, 0.2);
     }
   }
 }

@@ -4,5 +4,11 @@
 .query {
   @include border-b;
 
-  padding: 10px 15px;
+  display: flex;
+  flex: 1;
+  padding: 10px 15px 15px;
+
+  .separator {
+    flex: unset;
+  }
 }

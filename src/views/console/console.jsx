@@ -1,26 +1,26 @@
 import React from 'react';
 
-import { ConsoleProvider } from '../../context/console-context';
-import { AuthProvider } from '../../context/auth-context';
-import ConsoleService from '../../services/console.service';
+// import { ConsoleProvider } from '../../context/console-context';
+// import { AuthProvider } from '../../context/auth-context';
+// import ConsoleService from '../../services/console.service';
 import Actions from './components/actions/actions';
 import Header from './components/header/header';
 import History from './components/history/history';
 import Query from './components/query/query';
 import './console.scss';
 
-const consoleService = new ConsoleService();
+// const consoleService = new ConsoleService();
 
 function Console() {
   return (
-    <>
+    <div className="console">
       <Header />
-      <main className="console">
+      <main className="console__main">
         <History />
         <Query />
       </main>
       <Actions />
-    </>
+    </div>
     // <>
     //   <AuthProvider value={consoleService}>
     //     <Header />
