@@ -1,3 +1,4 @@
+@import '../../../assets/styles/mixins';
 @import '../../../assets/styles/variables';
 
 .btn {
@@ -11,8 +12,7 @@
   font-family: inherit;
 
   &:focus:not(:active) {
-    box-shadow:  0 0 0px 2px rgba($blue-400, 0.5);
-    border-radius: 7px;
+    @include focus-shadow(rgba($blue-400, 0.5))
   }
 
   &:hover {

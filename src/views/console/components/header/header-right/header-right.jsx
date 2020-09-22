@@ -20,6 +20,7 @@ function HeaderRight() {
   return (
     <div className="header-right">
       <LoginStatus />
+      <BaseIconButton title="Выйти" img="logout" alt="Logout" onClicked={() => console.log('1')}/>
       <BaseIconButton img={iconName} alt="Full screen" onClicked={toggleFullScreen}/>
     </div>
   )

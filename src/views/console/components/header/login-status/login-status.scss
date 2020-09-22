@@ -1,3 +1,16 @@
+@import '../../../../../assets/styles/variables';
+
 .login-status {
-  
+  padding: 5px 15px;
+  border: 1px solid $gray-450;
+  border-radius: $radius-5;
+
+  .login-status__text {
+
+  }
+
+  .login-status__separator {
+    color: $gray-450;
+    margin: 0 5px;
+  }
 }

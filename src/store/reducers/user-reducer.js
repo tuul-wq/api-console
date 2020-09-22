@@ -9,7 +9,8 @@ function reducer(state = initialState, { type, payload }) {
 
 const initialState = {
   user: {
-    a: 1
+    email: 'vasya123@gmail.com',
+    name: 'vasya'
   }
 };
 
