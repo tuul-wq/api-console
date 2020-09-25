@@ -3,7 +3,7 @@ function reducer(state = initialState, { type, payload }) {
     case 'XXX':
       return state.console
     default:
-      return state.console;
+      return state;
   }
 }
 

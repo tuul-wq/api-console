@@ -7,9 +7,9 @@ import './query.scss';
 function Query() {
   return (
     <div className="query">
-      <QueryInput id="first" title="Запрос:"/>
+      <QueryInput title="Запрос:"/>
       <Separator  />
-      <QueryInput id="second" title="Ответ:"/>
+      <QueryInput title="Ответ:"/>
     </div>
   )
 }

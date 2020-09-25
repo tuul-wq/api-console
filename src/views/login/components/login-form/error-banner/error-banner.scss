@@ -3,7 +3,7 @@
 .error-banner {
   padding: 10px;
   background-color: rgba($red-500, 0.1);
-  border-radius: $radius-5;
+  border-radius: $radius;
 
   .error-banner__title {
     font-size: $font-size-18;
@@ -11,7 +11,7 @@
     color: $red-500;
 
     &::before {
-      content: url('../../../../../assets/images/meh.svg');
+      content: url('../../../../../assets/images/misc/meh.svg');
       display: inline-block;
       vertical-align: text-bottom;
       margin-right: 10px;

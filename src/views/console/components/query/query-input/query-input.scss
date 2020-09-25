@@ -4,8 +4,6 @@
 .query-input {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  // width: 100%;
 
   .query-input__title {
     color: $gray-600;
@@ -22,7 +20,7 @@
     font-family: 'Source Code Pro', monospace;
     line-height: $line-height-18;
     border: 1px solid $gray-450;
-    border-radius: $radius-5;
+    border-radius: $radius;
     outline: none;
 
     &:focus, &:hover {

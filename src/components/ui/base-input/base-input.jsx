@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import './base-input.scss';
 
 function BaseInput({ title, value, type, hasError, isOptional, onChanged }) {
+  console.log('BaseInput -> value', value);
   const rowClasses = `input-row ${hasError ? 'input-row--error' : ''}`;
   const titleClasses = `input-row__title ${isOptional ? 'input-row__title--optional' : ''}`;
   const inputType = type || 'text';
@@ -26,7 +27,7 @@ function BaseInput({ title, value, type, hasError, isOptional, onChanged }) {
 
 BaseInput.propTypes = {
   title: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
   type: PropTypes.oneOf(['text', 'password', 'number']),
   hasError: PropTypes.bool,
   isOptional: PropTypes.bool,

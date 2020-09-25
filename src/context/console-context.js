@@ -1,6 +1,8 @@
 import React from 'react';
+import ConsoleService from '../services/console.service';
 
-const ConsoleContext = React.createContext();
+const service = new ConsoleService();
+const ConsoleContext = React.createContext({ service });
 
 export const ConsoleProvider = ConsoleContext.Provider;
-export const ConsoleConsumer = ConsoleContext.Consumer;
+export default ConsoleContext;

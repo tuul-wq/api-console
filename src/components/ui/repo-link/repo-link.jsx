@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './repo-link.scss';
 
 function RepoLink() {

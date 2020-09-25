@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Logo from '../../../../../components/common/logo/logo';
+import Logo from '../../../../../components/ui/logo/logo';
 import Heading from '../../../../../components/ui/heading/heading';
 import './header-left.scss';
 

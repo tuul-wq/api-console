@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 import './base-button.scss';
 
-function BaseButton({ title, isLoading, onClicked }) {
+function BaseButton({ title, type, isLoading, onClicked }) {
   const classes = `btn ${isLoading ? 'btn--loading' : ''}`;
 
   return (
-    <button type="button" className={classes} onClick={onClicked}>
+    <button type={type || 'button'} className={classes} onClick={onClicked}>
       <span className="btn__title">{title}</span>
     </button>
   )
@@ -15,8 +15,9 @@ function BaseButton({ title, isLoading, onClicked }) {
 
 BaseButton.propTypes = {
   title: PropTypes.string.isRequired,
+  type: PropTypes.string,
   isLoading: PropTypes.bool,
-  onClicked: PropTypes.func.isRequired
+  onClicked: PropTypes.func
 };
 
 export default BaseButton;

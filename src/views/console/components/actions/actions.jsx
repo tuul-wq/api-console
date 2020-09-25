@@ -1,7 +1,7 @@
 import React from 'react';
 
 import BaseButton from '../../../../components/ui/base-button/base-button';
-import RepoLink from '../../../../components/common/repo-link/repo-link';
+import RepoLink from '../../../../components/ui/repo-link/repo-link';
 import BaseIconButton from '../../../../components/ui/base-icon-button/base-icon-button';
 import './actions.scss';
 
